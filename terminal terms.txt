@@ -1,0 +1,11 @@
+git -v == checking ver
+clear
+pwd == present working directory
+ls == list file
+mkdir == make directory
+cd == changing directory
+cd .. == chg dir upward
+touch == create file
+nano == app to edit file
+cat == app to read file
+mv == moving file or folder

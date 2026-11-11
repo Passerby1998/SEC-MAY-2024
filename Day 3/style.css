@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg {
+  background-color: #110f57;
+  height: 1100px;
+  width: 900px;
+  position: relative;
+}
+
+/* Main section*/
+#hero {
+  height: 530px;
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#mainLogo > img {
+  width: 150px;
+}
+
+#mainText {
+  color: #00fb82;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 40px;
+  line-height: 90px;
+}
+
+#text > p {
+  margin-top: 50px;
+  font-size: 20px;
+  color: #e2e2e2bb;
+  line-height: 30px;
+}
+
+#logos > img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  margin-top: 60px;
+}
+
+/* Lines with curved bottom */
+
+#line1 {
+  width: 30px;
+  height: 200px;
+  background-color: #00fb82;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  position: absolute;
+  right: 270px;
+  top: -130px;
+}
+
+#line2 {
+  width: 30px;
+  height: 200px;
+  background-color: yellow;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  position: absolute;
+  right: 210px;
+  top: -80px;
+}
+
+#line3 {
+  width: 30px;
+  height: 200px;
+  background-color: #00fb82;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  position: absolute;
+  right: 150px;
+  top: 0px;
+}
+
+#line4 {
+  width: 30px;
+  height: 200px;
+  background-color: yellow;
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  position: absolute;
+  right: 90px;
+  top: -40px;
+}
+
+.circle-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 160px;
+  width: 270px;
+  position: absolute;
+  right: -12px;
+  bottom: 500px;
+  transform: rotate(-9deg);
+}
+
+.circle1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #ffffff94;
+}
+
+.circle-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 160px;
+  width: 270px;
+  position: absolute;
+  left: -20px;
+  bottom: 150px;
+  transform: rotate(-9deg);
+}
+
+.circle2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #ffffff94;
+}
+
+#whiteCircle > .circle2 {
+  background-color: white;
+}
+
+#picture > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 900px;
+}

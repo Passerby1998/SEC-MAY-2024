@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Day 3 - 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #bg-color {
+        height: 1000px;
+        width: 1500px;
+        background-color: #1e1f2f;
+        position: relative;
+      }
+
+      .section1 {
+        height: 800px;
+        width: 700px;
+        top: 100px;
+        left: 50px;
+        position: relative;
+      }
+
+      .section1 > #box1 {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+      }
+
+      .section1 > #box2 {
+        width: 100%;
+        height: 40%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+
+      .section1 > #box3 {
+        width: 100%;
+        height: 15%;
+        bottom: 0px;
+        position: absolute;
+      }
+
+      .section1 > #box1 > .child1 {
+        height: 100%;
+        width: 25%;
+        position: absolute;
+      }
+
+      .section1 > #box1 > .child1 > #square1 {
+        height: 20px;
+        width: 20px;
+        bottom: 60px;
+        right: 70px;
+        background-color: white;
+        position: absolute;
+      }
+
+      .section1 > #box1 > .child1 > #square2 {
+        height: 60px;
+        width: 60px;
+        bottom: 0px;
+        right: 10px;
+        background-color: palevioletred;
+        position: absolute;
+      }
+
+      .section1 > #box1 > .child1 > #square2 > p {
+        font-weight: lighter;
+        font-size: 60px;
+        padding-left: 10px;
+        color: white;
+      }
+
+      .section1 > #box1 > .child2 {
+        height: 100%;
+        left: 175px;
+        position: absolute;
+      }
+
+      .section1 > #box1 > .child2 > p {
+        font-weight: bold;
+        color: white;
+        font-size: 60px;
+        padding-top: 80px;
+      }
+
+      .section1 > #box2 > P {
+        font-size: 93px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .section1 > #box3 > .text1 {
+        width: 50%;
+        height: 100%;
+        left: 0px;
+        padding: 30px;
+        position: absolute;
+      }
+
+      .section1 > #box3 > .text2 {
+        width: 50%;
+        height: 100%;
+        right: 0px;
+        padding: 30px;
+        position: absolute;
+      }
+
+      .section2 {
+        height: 800px;
+        width: 700px;
+        top: -700px;
+        left: 780px;
+        position: relative;
+      }
+
+      .section2 > #big-white-square {
+        width: 500px;
+        height: 600px;
+        background-color: transparent; /* Make sure the center is empty */
+        border: 50px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .section2 > #red-square {
+        width: 270px;
+        height: 270px;
+        background-color: transparent;
+        border: 50px solid red;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .section2 > #blue-square {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: 25px solid blue;
+        position: absolute;
+        top: 500px;
+        left: 215px;
+      }
+
+      .section2 > #white-circle {
+        width: 100px; /* Diameter of the circle */
+        height: 100px; /* Diameter of the circle */
+        background-color: transparent; /* Ensure the center is empty */
+        border: 25px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 500px;
+        right: 215px;
+      }
+
+      .section2 > #small-white-square {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: 25px solid white;
+        position: absolute;
+        top: 285px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #bg-square1 {
+        width: 500px;
+        height: 510px;
+        background-color: transparent;
+        border: 50px solid rgba(255, 255, 255, 0.185);
+        position: absolute;
+        top: -50px;
+        right: -90px;
+      }
+
+      #bg-square2 {
+        width: 500px;
+        height: 700px;
+        background-color: transparent;
+        border: 50px solid rgba(255, 255, 255, 0.062);
+        position: absolute;
+        bottom: -110px;
+        right: 345px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg-color">
+      <div class="section1">
+        <div id="box1">
+          <div class="child1">
+            <div id="square1"></div>
+            <div id="square2"><p>R</p></div>
+          </div>
+          <div class="child2"><p>WARMUPS</p></div>
+        </div>
+        <div id="box2"><p>LOREM IPSUM NEQUE PORRO</p></div>
+        <div id="box3">
+          <div class="text1">
+            <img src="/assets/people.png" alt="people icon" />
+          </div>
+          <div class="text2">
+            <img src="/assets/time.png" alt="time icon" />
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div id="big-white-square"></div>
+        <div id="red-square"></div>
+        <div id="blue-square"></div>
+        <div id="white-circle"></div>
+        <div id="small-white-square"></div>
+      </div>
+      <div id="bg-square1"></div>
+      <div id="bg-square2"></div>
+    </div>
+  </body>
+</html>
