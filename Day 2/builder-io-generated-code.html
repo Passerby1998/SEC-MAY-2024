@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS design</title>
+  </head>
+  <body>
+    <div class="div">
+      <div class="div-2">
+        <div class="div-3">Logo</div>
+        <div class="div-4">
+          <div class="div-5">HOME</div>
+          <div class="div-6">ABOUT</div>
+          <div class="div-7">DESTINATIONS</div>
+          <div class="div-8">GALLERY</div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/55b6a591c9920149f5968b7b249b5b7081d0ab623400e261d862df130d811255?"
+          class="img"
+        />
+      </div>
+      <div class="div-9"></div>
+      <div class="div-10">
+        <div class="div-11">
+          <div class="column">
+            <div class="div-12">
+              <div class="div-13"></div>
+              <div class="div-14">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                ut nec aliquam pellentesque enim, ultrices. Eget proin vulputate
+                sed neque ut cursus. Egestas sed vitae lectus non, bibendum
+                justo. Id aliquet faucibus quis bibendum vitae. Est eget
+                scelerisque vivamus dui id sit duis venenatis, eget. Blandit
+                tristique eleifend pharetra eleifend nunc nam. Tortor, interdum
+                ut velit sodales. Cum integer velit sagittis, eget lacus eu, est
+                et. A aliquam, posuere blandit ut duis. Nisl, lectus nibh a
+                varius. Dui tortor, sed dolor vel venenatis tellus semper donec.
+                Ultricies non quis lectus a, aliquet. Mattis quam tempus
+                vulputate nunc, fusce cras elementum. Nunc ac, tincidunt amet,
+                in id fringilla eget.
+              </div>
+            </div>
+          </div>
+          <div class="column-2">
+            <div class="div-15">
+              <div class="div-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque dis hac faucibus eget. Ultricies ut tristique
+                ultricies etiam. Risus dapibus felis congue feugiat dui.
+                Eleifend suscipit nec, imperdiet auctor neque, augue ac
+                tincidunt ut. Nulla facilisi velit odio consectetur. Volutpat
+                vel dignissim donec posuere blandit. Pulvinar odio neque, eget
+                nibh facilisi nisl. Consectetur venenatis cursus viverra morbi
+                ut massa consectetur sed. Nisl tellus curabitur tincidunt eget.
+                Cursus scelerisque sollicitudin tortor montes, nisl faucibus.
+                Elementum sit et eu enim commodo, fermentum dignissim non eget.
+                Euismod pulvinar vitae sapien, ut cras.
+                <br />
+              </div>
+              <div class="div-17"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-18">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/d8565565f6b18f5ee4989f76e576577694b56335f22bf6bf9928d8c40ab8efba?"
+          class="img-2"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/059e833c4e992b278f119d7392bb16973834b99d9d7507c47e6b2de170d07660?"
+          class="img-3"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cca63091752ffe59f632e132487d92175cb40ad8f5520d6fafe612b49b758af4?"
+          class="img-4"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b1f2138223b59cb0a16ce6c5ce84c6ace7f54ac73a721ec58e36b5ebef3b9e9?"
+          class="img-5"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b49a82ccfab81c4435a8479d2e913852781e887177071764a1fb2c8686eddb0?"
+          class="img-6"
+        />
+      </div>
+      <div class="div-19">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/dfc21636c0a40f01af97b2259e09be5b6fdacfa53814b23a82464cec3176a5d8?"
+          class="img-7"
+        />
+        <div class="div-20">2021 - All rights reserved</div>
+      </div>
+    </div>
+    <style>
+      .div {
+        background-color: #fff;
+        display: flex;
+        max-width: 814px;
+        flex-direction: column;
+        align-items: center;
+        padding: 26px 0;
+      }
+      .div-2 {
+        display: flex;
+        width: 100%;
+        max-width: 694px;
+        gap: 20px;
+        color: #000;
+        font-weight: 400;
+        white-space: nowrap;
+        justify-content: space-between;
+      }
+      @media (max-width: 991px) {
+        .div-2 {
+          max-width: 100%;
+          flex-wrap: wrap;
+          white-space: initial;
+        }
+      }
+      .div-3 {
+        background-color: #c4c4c4;
+        justify-content: center;
+        padding: 12px 17px;
+        font: 12px Roboto, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .div-3 {
+          white-space: initial;
+        }
+      }
+      .div-4 {
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+        justify-content: space-between;
+        margin: auto 0;
+      }
+      @media (max-width: 991px) {
+        .div-4 {
+          white-space: initial;
+        }
+      }
+      .div-5 {
+        font-family: Roboto, sans-serif;
+      }
+      .div-6 {
+        font-family: Roboto, sans-serif;
+      }
+      .div-7 {
+        font-family: Roboto, sans-serif;
+      }
+      .div-8 {
+        font-family: Roboto, sans-serif;
+      }
+      .img {
+        aspect-ratio: 0.83;
+        object-fit: auto;
+        object-position: center;
+        width: 20px;
+        fill: #000;
+        align-self: start;
+        margin-top: 9px;
+      }
+      .div-9 {
+        background-color: #c4c4c4;
+        align-self: stretch;
+        margin-top: 22px;
+        width: 100%;
+        align-items: center;
+        color: #000;
+        justify-content: center;
+        padding: 151px 60px 134px;
+        font: 400 13px Roboto, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .div-9 {
+          max-width: 100%;
+          padding: 40px 20px;
+        }
+      }
+      .div-10 {
+        margin-top: 42px;
+        width: 100%;
+        max-width: 733px;
+      }
+      @media (max-width: 991px) {
+        .div-10 {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+      }
+      .div-11 {
+        gap: 20px;
+        display: flex;
+      }
+      @media (max-width: 991px) {
+        .div-11 {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0px;
+        }
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 0px;
+      }
+      @media (max-width: 991px) {
+        .column {
+          width: 100%;
+        }
+      }
+      .div-12 {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #000;
+        font-weight: 400;
+        padding: 0 20px;
+      }
+      @media (max-width: 991px) {
+        .div-12 {
+          margin-top: 40px;
+        }
+      }
+      .div-13 {
+        background-color: #c4c4c4;
+        height: 199px;
+      }
+      .div-14 {
+        font-family: Roboto, sans-serif;
+        margin-top: 41px;
+      }
+      @media (max-width: 991px) {
+        .div-14 {
+          margin-top: 40px;
+        }
+      }
+      .column-2 {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 20px;
+      }
+      @media (max-width: 991px) {
+        .column-2 {
+          width: 100%;
+        }
+      }
+      .div-15 {
+        display: flex;
+        margin-top: 10px;
+        flex-grow: 1;
+        flex-direction: column;
+        font-size: 12px;
+        color: #000;
+        font-weight: 400;
+        padding: 0 20px;
+      }
+      @media (max-width: 991px) {
+        .div-15 {
+          margin-top: 40px;
+        }
+      }
+      .div-16 {
+        font-family: Roboto, sans-serif;
+      }
+      .div-17 {
+        background-color: #c4c4c4;
+        margin-top: 47px;
+        height: 199px;
+      }
+      @media (max-width: 991px) {
+        .div-17 {
+          margin-top: 40px;
+        }
+      }
+      .div-18 {
+        display: flex;
+        margin-top: 58px;
+        width: 354px;
+        max-width: 100%;
+        align-items: start;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+      @media (max-width: 991px) {
+        .div-18 {
+          margin-top: 40px;
+        }
+      }
+      .img-2 {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 20px;
+        fill: #000;
+      }
+      .img-3 {
+        aspect-ratio: 0.95;
+        object-fit: auto;
+        object-position: center;
+        width: 19px;
+        fill: #000;
+      }
+      .img-4 {
+        aspect-ratio: 1.33;
+        object-fit: auto;
+        object-position: center;
+        width: 24px;
+        fill: #000;
+      }
+      .img-5 {
+        aspect-ratio: 1.64;
+        object-fit: auto;
+        object-position: center;
+        width: 23px;
+        fill: #000;
+      }
+      .img-6 {
+        aspect-ratio: 1.49;
+        object-fit: auto;
+        object-position: center;
+        width: 24px;
+      }
+      .div-19 {
+        display: flex;
+        margin-top: 43px;
+        gap: 16px;
+        font-size: 13px;
+        color: #000;
+        font-weight: 300;
+        padding: 0 20px;
+      }
+      @media (max-width: 991px) {
+        .div-19 {
+          margin-top: 40px;
+        }
+      }
+      .img-7 {
+        aspect-ratio: 1.33;
+        object-fit: auto;
+        object-position: center;
+        width: 20px;
+        fill: rgba(0, 0, 0, 0.66);
+      }
+      .div-20 {
+        font-family: Roboto, sans-serif;
+      }
+    </style>
+  </body>
+</html>
